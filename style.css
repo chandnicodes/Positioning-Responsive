@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.bg-wrap {
+  display: flex;
+  height: 100vh;
+}
+.left-bg {
+  width: 35%;
+  background-color: rgb(37, 29, 44);
+}
+.right-bg {
+  width: 65%;
+  background-color: rgb(255, 255, 255);
+}
+.inner-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.main-content div {
+  width: 50%;
+}
+.cards {
+  position: relative;
+}
+.front-card img,
+.back-card img {
+  border-radius: 8px;
+  width: 360px;
+}
+.back-card {
+  float: right;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form input {
+  border: 1px solid #121212;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+  margin-bottom: 16px;
+  width: 320px;
+}
+.flex-exp input {
+  width: 60px;
+  text-align: center;
+}
+#expiryyear {
+  width: 160px;
+}
+input[type="submit"] {
+  background: black;
+  color: white;
+}
+span {
+  margin-right: 45px;
+}
+small {
+  visibility: hidden;
+}
+.form-control.error input {
+  border-color: red;
+}
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control small {
+  color: red;
+  bottom: 10px;
+  left: 0;
+  width: max-content;
+  display: inline-block;
+  position: relative;
+  line-height: 3;
+}
+.form-control.error small {
+  visibility: visible;
+}
+.flex-exp {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .wrapper {
+    width: 560px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    width: 520px;
+    max-width: 98%;
+  }
+  .bg-wrap {
+    flex-direction: column;
+  }
+  .left-bg {
+    width: 100%;
+    height: 40vh;
+  }
+  .right-bg {
+    width: 100%;
+    height: 60vh;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .front-card img,
+  .back-card img {
+    width: 260px;
+  }
+  .form input {
+    width: 280px;
+  }
+  .flex-exp input {
+    width: 50px;
+  }
+  #expiryyear {
+    width: 140px;
+  }
+  .cards {
+    height: 305px;
+    top: 0%;
+    left: 20%;
+    transform: translate(-35%, 25%);
+  }
+  .front-card {
+    position: absolute;
+    bottom: 41px;
+    left: -38px;
+    z-index: 11;
+  }
+  .back-card {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

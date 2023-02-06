@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- site-wrapper  -->
+    <div class="wrapper">
+        <!-- backgrounds  -->
+        <div class="bg-wrap">
+            <div class="left-bg"></div>
+            <div class="right-bg"></div>
+        </div>
+        <!-- inner-wraper  -->
+        <div class="inner-wrap">
+            <div class="container">
+                <div class="main-content">
+                    <div class="cards">
+                        <div class="front-card"><img src="images/front-card.jpg" alt="front-card-image"></div>
+                        <div class="back-card"><img src="images/back-card.jpg" alt="back-card-image"></div>
+                    </div>
+                    <div class="user-details">
+                        <!-- form  -->
+                        <form action="" class="form" id="form">
+                            <div class="formControl">
+                                <label for="usernane">cardholder-name</label>
+                                <input type="text" id="username" name="username" placeholder="user name" />
+                                <small>error</small>
+                            </div>
+                            <div class="formControl">
+                                <label for="usercard">card-number</label>
+                                <input type="text" id="usercard" name="usercard" placeholder="card number" />
+                                <small>error</small>
+                            </div>
+                            <label for="expirydate"> exp. date <span> (mm-yy)</span>cvv</label>
+                            <div class="flex-exp">
+                                <div class="formControl">
+                                    <input type="text" placeholder="MM" id="expirydate" name="expirydate">
+                                    <small>error</small>
+                                </div>
+                                <div class="formControl">
+                                    <input type="text" placeholder="YY" id="expirymonth" name="expirymonth" />
+                                    <small>error</small>
+                                </div>
+                                <div class="formControl">
+                                    <input type="text" placeholder="017" id="expiryyear" name="expiryyear" />
+                                    <small>error</small>
+                                </div>
+                            </div>
+                            <input type="submit" value="Confirm" id="confirm">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
